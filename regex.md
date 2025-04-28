@@ -16,16 +16,6 @@
 
 // Default before & after secret
 ```
-## _auth 
-```js
-// Secret format
-(?i)\_auth[[:space:]]{0,20}=[[:space:]]{0,20}([A-Za-z0-9!@#$%^&*()_+.\-]+)
-
-// Before Secret
-(^|\s)
-// After Secret
-(\s|$)
-```
 
 ## EC & DSA Private_Key
 ```js

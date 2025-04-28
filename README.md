@@ -30,7 +30,8 @@ GitHub uses regex & checksums directly from the [partners](https://docs.github.c
 
 - AWS_Keys - majority are not valid and don't contain key + secret pair
 - Slack_Token - 100% accuracy as the token provided is real
-- Facebook_Token - not a real key 
+- Facebook_Token - not a real key
+- npm tokens - examples uses are not real tokens
 - GitHub_Token - does not look for correct pattern - uses github looking in enclosed quotes
 - Twitter_Token - not supported requires custom pattern or feature request
 - Heroku_Token - not supported requires custom pattern or feature request
@@ -40,9 +41,8 @@ GitHub uses regex & checksums directly from the [partners](https://docs.github.c
 - Private_Keys - do not contain keys just headers
   - DSA & EC - not supported requires custom pattern or feature request
 - Basic_Auth - 2/4 have valid tokens
-- .npmrc_auth - not supported requires custom pattern or feature request
 - Connection_String & JDBC_Connection_String - not supported requires custom pattern or feature request
-  - MongoDB, mysql support, postgres
+  - MongoDB, mysql support, postgres - connection strings supported
 
 ### Custom Patterns
 #### Keys
@@ -149,7 +149,6 @@ wc -l local-tests/fail.txt && wc -l local-tests/pass.txt
 | EC & DSA Private Keys | 6 | 0 |
 | jdbc_connection_string | 5 | 1 |
 | connection_string | 13 | 0 |
-| _auth | 5 | 0 |
 | Keys | 73 | 7 |
 | Passwords | 167 | 51 |
 
